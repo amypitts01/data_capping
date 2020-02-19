@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    {
+      "name": "Do schools kill creativity",
+      "label": "Ken Robinson",
+      "id": 1
+    },
+    {
+      "name": "Bring on the learning revolution",
+      "label": "Ken Robinson",
+      "id": 2
+    },
+    {
+      "name": "How to escape education's death valley",
+      "label": "Ken Robinson",
+      "id": 3
+    },
+    {
+      "name": "How to fix a broken school",
+      "label": "Linda Cliatt-Wayman",
+      "id": 4
+    },
+    {
+      "name": "Education innovation in the slums",
+      "label": "Charles Leadbeater",
+      "id": 5
+    },
+    {
+      "name": "A short intro to Studio School",
+      "label": "Geoff Mulgan",
+      "id": 6
+    },
+    {
+      "name": "How America's public schools keep kids in poverty",
+      "label": "Kandice Sumner",
+      "id": 7
+    },
+    {
+      "name": "Teaching one child at a time",
+      "label": "Shukla Bose",
+      "id": 8
+    },
+    {
+      "name": "3 ways to plan for the (very) long term",
+      "label": "Ari Wallach",
+      "id": 9
+    }
+    
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "type": ""
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "type": ""
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "type": ""
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "type": ""
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "type": "connected"
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "type": "connected"
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "type": "connected"
+    }
+    
+    
+  ]
+}
