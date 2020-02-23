@@ -50,8 +50,8 @@ p {
 
 
 
-/*Home, Duration by event, and online activity*/ 
-.total {
+/*specific pages*/
+.left_div { /*on the vis and about us page*/ 
 	width: 45%;
 	font-family: Helvetica;
 	height: 400px;
@@ -65,20 +65,7 @@ p {
     
 }
 
-#vector {
-	width: 45%;
-	height: 400px;
-	border: 5px solid  pink;
-    padding: 5px;
-    background-color: white ; 
-   
-}
-#vector.link {
-    stroke: #999; 
-    stroke-opacity: .6; 
-    stroke-width: 1px;
-}
-.totalText {
+.right_div { /*on the vis and about us page*/ 
 	width: 45%;
 	font-family: Helvetica;
 	float: right;
@@ -92,7 +79,8 @@ p {
     background-color: white ; 
  
 }
-#forceSummary {
+
+#indexSummary { /*index page at bottom*/ 
 	font-size: 25;
 	font-family: Helvetica;
 	border: 5px solid  pink;
@@ -104,8 +92,8 @@ p {
 }
 
 
-/*Langauge Analysis*/
-#Langtop {
+/*quote generation*/
+#quote_top {
 	font-size: 25;
 	font-family: Helvetica;
 	border: 5px solid  pink;
@@ -116,7 +104,7 @@ p {
     height: 500px;
 }
 
-#LATopSum {
+#quote_summary {
 	font-size: 25;
 	font-family: Helvetica;
 	border: 5px solid  pink;
@@ -130,48 +118,8 @@ p {
     height: 100px;
 }
 
-.l {
-	width: 25%;
-	font-family: Helvetica;
-	display: inline-block;
-	height: 250px;
-	margin: 0px;
-	margin-left: 90px;
-	margin-bottom:25px;	
-	border: 5px solid  pink;
-    padding: 5px;
-    background-color: white ; 
-    
-}
-.b {
-	width: 25%;
-	font-family: Helvetica;
-	display: inline-block;
-	height: 250px;
-	margin: 0px;
-	margin-left: 25px;
-	margin-bottom:25px;
-	border: 5px solid  pink;
-    padding: 5px;
-    background-color: white ; 
-    
-}
-
-#LAMidSum {
-	font-size: 25;
-	font-family: Helvetica;
-	border: 5px solid  pink;
-    padding-right:15px;
-    padding-left: 15px;
-    padding-bottom:25px;
-    margin:auto;
-    margin-right:105px;
-    width: 81.5%;
-    background-color: white ; 
-    height: 100px;
-}
-
-#LangBottom {
+/*Twitter bot page*/
+#twitter_bot {
 	font-size: 25;
 	font-family: Helvetica;
 	border: 5px solid  pink;
@@ -182,7 +130,7 @@ p {
     height: 500px;
 }
 
-#LABotSum {
+#twitter_summary {
 	font-size: 25;
 	font-family: Helvetica;
 	border: 5px solid  pink;
@@ -196,12 +144,9 @@ p {
     height: 100px;
 }
 
-hr {
-	margin-top:20px;
-	margin-bottom:20px;
-}
-#DBESum {
 
+
+#vis_des { /*for visualization page top summary*/
 	width: 94%;
 	font-family: Helvetica;
 	height: 25px;
@@ -217,10 +162,9 @@ hr {
     padding-right:15px;
     padding-left: 15px;
     padding-bottom:25px;
-
 }
 
-#BottomDBESum {
+#vis_summary { /*for visualization page bottom two summary*/
 
 	width: 94%;
 	font-family: Helvetica;
@@ -240,52 +184,13 @@ hr {
 
 }
 
-
-/*im not sure what this does*/
-.titleGraphics {
-	text-align: center;
-	font-family: Helvetica;
-	font-size: 26px;
-	color:#52658F;
-	padding-bottom:10px;
+/*horixontal line*/
+hr {
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
-
-
-.axis path,
-.axis line {
-	fill: none;
-	stroke: black;
-	shape-rendering: crispEdges;
-}
-			
-.axis text {
-	font-family: sans-serif;
-	font-size: 15px;
-}
-
-.title {
-  font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
-
-
-
-/*Hover*/
-rect:hover {
-	fill: darkgray;
-}
-
-circle:hover {
-	fill: "pink";
-}
-			
-
-
-
-
-/*The menu bar*/ 
+/*The menu bar*/
 ul {
     list-style-type: none;
     font-family: Helvetica;
@@ -321,7 +226,20 @@ li a:hover:not(.active) {
 .active {
     background-color: pink;
 }
-/**/
 
 
 
+/*For the Button on the quote generation page*/
+.button {
+	background-color: pink;
+	border: 3px solid lightgray;;
+	margin: auto;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	
+  }
