@@ -6,6 +6,15 @@
     <title>Exploration of Quotes</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!--Script for button click!-->
+    <script> 
+        function funonclick() { 
+            document.getElementById("geeks").innerHTML = 
+                            "This will be a generated quote."; 
+        } 
+    </script> 
+
 </head>
 
 <body>
@@ -21,15 +30,15 @@
     </div>
     <!--Langauge vs. Views-->
     <div id="quote_top"> 
-        <button class="button">Button</button>
+        <button class="button" onclick = "funonclick()">Quote Generator</button>
        
     </div>
 
-    <hr> <!--Horizontal line-->
+    <!--<hr> Horizontal line-->
 
     <div id="quote_summary">
-        <p>something about quotes 
-        </p>
+        <h1>Generated Quote:</h1>
+        <h3 id = "geeks"></h3> 
     </div>
 
 

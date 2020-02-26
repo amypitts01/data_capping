@@ -61,11 +61,14 @@ p {
 	
 	border: 5px solid  pink;
     padding: 5px;
-    background-color: white ; 
+	background-color: white ; 
+	
+	display: flex; /*this is how i centered the button*/
+  	justify-content: center; /*this is how i centered the button*/
     
 }
 
-.right_div { /*on the vis and about us page*/ 
+.right_div { /*on the about us page*/ 
 	width: 45%;
 	font-family: Helvetica;
 	float: right;
@@ -77,6 +80,24 @@ p {
 	border: 5px solid  pink;
     padding: 5px;
     background-color: white ; 
+ 
+}
+
+.right_div_vis { /*on the vis */ 
+	width: 45%;
+	font-family: Helvetica;
+	float: right;
+	height: 400px;
+	margin: 0px;
+	margin-right: 15px;
+	margin-bottom:15px;
+	
+	border: 5px solid  pink;
+    padding: 5px;
+	background-color: white ; 
+	
+	display: flex; /*this is how i centered the button*/
+  	justify-content: center; /*this is how i centered the button*/
  
 }
 
@@ -101,7 +122,9 @@ p {
     margin:auto;
     width: 75%;
     background-color: white ; 
-    height: 500px;
+	height: 200px;
+	display: flex; /*this is how i centered the button*/
+  	justify-content: center; /*this is how i centered the button*/
 }
 
 #quote_summary {
@@ -115,7 +138,7 @@ p {
     margin-top:25px;
     width: 75%;
     background-color: white ; 
-    height: 100px;
+    height: 250px;
 }
 
 /*Twitter bot page*/
@@ -232,14 +255,15 @@ li a:hover:not(.active) {
 /*For the Button on the quote generation page*/
 .button {
 	background-color: pink;
-	border: 3px solid lightgray;;
+	border: 5px solid lightgray;;
 	margin: auto;
 	color: white;
-	padding: 15px 32px;
+	padding: 25px 52px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 30px;
 	cursor: pointer;
+	display: inline-block;
 	
   }
