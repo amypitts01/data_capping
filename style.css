@@ -31,6 +31,16 @@ p {
     text-align:center;
     font-size: 12px;
 }
+.intro {
+	font-size: 200%;
+	font-family: Helvetica;
+	border: 5px solid  pink;
+    padding: 15px;
+    margin: 15px;
+    background-color: white ; 
+    height: 250px;
+	text-align: center
+}
 .summary {
 	font-size: 25;
 	font-family: Helvetica;
@@ -40,6 +50,7 @@ p {
     background-color: white ; 
     height: 250px;
 }
+
 #tabs {
 	padding: 0px;
 	font-family: Helvetica;
