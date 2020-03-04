@@ -112,6 +112,26 @@ p {
  
 }
 
+#big_vis { /*for visualization page bottom two summary*/
+
+	width: 94%;
+	font-family: Helvetica;
+	height: 400px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:15px;
+	
+	border: 5px solid  pink;
+    padding: 5px;
+    background-color: white ; 
+    
+    padding-right:15px;
+    padding-left: 15px;
+    padding-bottom:25px;
+
+}
+
 #indexSummary { /*index page at bottom*/ 
 	font-size: 25;
 	font-family: Helvetica;
