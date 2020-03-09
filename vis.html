@@ -23,41 +23,55 @@
     <p class="a"> </p>
 
     <div id="vis_des">
-        <p>The graphics bellow are an exploration into our dataset.  We have three variables that we are interested in gaining information from: Author, Quote, and Genre. </p>
+        <p>The graphics below explore some variables in the dataset.  The three we are interested in gaining information from are: Author, Quote, and Genre. </p>
     </div>
     <div id="tR" class="right_div_vis">
        <!-- <p>top right</p> -->
-       <img src="authors_hist.png" alt="Histogram of Authors" style="width:550px;height:400px;">
+       <img src="authors_hist.png" alt="Histogram of Authors" style="width:100%;">
         
     </div>
     <div id="tL" class="left_div">
        <!-- <p>top left </p>-->
 
-       <img src="genre_hist.png" alt="Histogram of Genres" style="width:550px;height:400px;">
+       <img src="genre_hist.png" alt="Histogram of Genres" style="width:100%;">
     </div>
 
 
     <div id="vis_summary">
-        <p> description </p>
-        <h3>Looking at hist of genres and authors of the original dataset </h3>
+        <h3>Count of Quotes Per Genre</h3>
+		<p>This histogram is showing the number of quotes in each of the 117 genres.  The most common genre is <em>age</em> and is closely followed by <em>alone</em>, <em>art</em>, <em>business</em> and <em>amazing</em>. 
+		   There are close to 1,000 quotes labeled with each of these genre.  
+		   The generes with the fewest quotes are <em>Mother's Day</em>, <em>St.Patrick's Day</em>, <em>Father's Day</em>, <em>Memorial Day</em>, and <em>Valentine's Day</em>.
+		   These genres are very close to the x-axis, so their counts are close to zero.  The counts of these quotes are all less than 20 each.</p>
+        
+		<h3>Count of Quotes Per Author</h3>
+		<p>This histogram shows the number of quotes per Author.  Because there are 11,173 unique Authors this histogram only shows the top 1,000 Authors.
+		It is clear from this graph that most of these authors write approximately 60 quotes each or less, but the maximum number of quotes an author wrote is just below 140. </p>
     </div>
     <hr>
     <!--    -----------------------------------------------         -->
 
     <div id="bR" class="right_div_vis">
        <!-- <p>bottom right</p>-->
-       <img src="t_f_140char.png" alt="True and False of Character <140" style="width:400px;height:400px;">
-       
+       <img src="t_f_280char.png" alt="True and False of Character <280" style="width:100%;">
         
     </div>
     <div id="bL" class="left_div">
         <!--<p>bottom left</p>-->
-        <img src="wordvchars.png" alt="True and False of Character <140" style="width:400px;height:400px;">
+        <img src="wordvchars.png" alt="Words vs. Characters" style="width:100%">
        
     </div>
 
     <div id="vis_summary">
-        <p> description </p>
+		<h3>Number of Words vs. Characters Per Quote</h3>
+        <p>This scatterplot shows the relationship between the number of words per quote compared to the number of characters per quote.
+			The plot clearly shows that as the number of words increase, the number of character increase and as the number of characters increase, the number of words increases.</p>
+		
+		<h3>Number of Quotes with <=280 Characters</h3>
+		<p>This histogram shows if the Number of Characters in the Quote are less than or equal to 280. 
+			If there are 280 characters or less, then the quote is labeled <em>True</em>, but is there are more than 280 characters, the quote is labeled <em>False</em>.
+			The number of characters is important for when the quotes we create are posted to twitter.  A tweet can have a maximum length of 280 characters.</p>
+			
     </div>
     <hr>
     <!--    -----------------------------------------------         -->
@@ -77,12 +91,12 @@
 
     <div id="bR" class="right_div_vis">
         <!-- <p>bottom right</p>-->
-         <img src="word_with_twitter.png" alt="Histogram of words" style="width:500px;height:400px;">
+         <img src="word_with_twitter.png" alt="Histogram of words" style="width:100%;">
         
          
      </div>
      <div id="bL" class="left_div">
-        <img src="hist_words.png" alt="Histogram of words" style="width:500px;height:400px;">
+        <img src="hist_words.png" alt="Histogram of words" style="width:100%;">
      </div>
 
      <div id="vis_summary">
@@ -96,12 +110,12 @@
 
      <div id="bR" class="right_div_vis">
         <!-- <p>bottom right</p>-->
-        <img src="char_with_twitter.png" alt="Histogram of chars with twitter" style="width:500px;height:400px;">
+        <img src="char_with_twitter.png" alt="Histogram of chars with twitter" style="width:100%;">
         
          
      </div>
      <div id="bL" class="left_div">
-        <div><img src="hist_chars.png" alt="Histogram of characters" style="width:500px;height:400px;"></div>
+        <div><img src="hist_chars.png" alt="Histogram of characters" style="width:100%;"></div>
      </div>
 
 
