@@ -50,6 +50,28 @@ p {
     background-color: white ; 
     height: 100%;
 }
+.summary2 { /*index page at bottom*/ 
+	font-size: 100%;
+	font-family: Helvetica;
+	border: 5px solid  pink;
+    padding: 15px;
+    margin: 15px;
+    background-color: white; 
+    height: 25px;
+	text-align: center;
+    
+}
+
+#indexSummary{ /*index page at bottom*/ 
+	font-size: 25;
+	font-family: Helvetica;
+	border: 5px solid  pink;
+    padding: 15px;
+    margin: 15px;
+    background-color: white; 
+    height: 25px;
+    
+}
 
 
 #tabs {
@@ -132,18 +154,6 @@ p {
     padding-bottom:25px;
 
 }
-
-#indexSummary { /*index page at bottom*/ 
-	font-size: 25;
-	font-family: Helvetica;
-	border: 5px solid  pink;
-    padding: 15px;
-    margin: 15px;
-    background-color: white ; 
-    height: 75px;
-    
-}
-
 
 /*quote generation*/
 #quote_top {
