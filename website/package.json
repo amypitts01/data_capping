@@ -1,0 +1,19 @@
+{
+  "name": "data_capping",
+  "version": "1.0.0",
+  "description": "For data capping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amypitts01/data_capping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amypitts01/data_capping/issues"
+  },
+  "homepage": "https://github.com/amypitts01/data_capping#readme"
+}
