@@ -54,14 +54,44 @@
 	
 	<div class="summary">
     <h3>Twitter Data</h3>
-	   <p></p>
-		
+	   <p>To be able to continuously update our data and algorithm that produces our quotes we needed a way to obtain new data. 
+		   This is able to be achieved using twitter accounts. After searching for the most inspiring and well-structured 
+		   twitter counts that tweet often we selected four accounts to pull data from. The account names are: </p>
+		   <br/><img src="twitter_accounts.png" alt="Twitter Acounts" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+		<p>The benefit of these accounts is they post only the quote, therefore when we pull the data the data cleaning process 
+			is minimal. We chose to delete any quote that was not tweeted by these 4 accounts to assure that we can 
+			give the proper credit to everyone. We then focus on just the text part of the tweet removing any symbols, 
+			emojis, or pictures and drop any duplicate quote. This leaves us with one column of just quotes. 
+		</p>  
 	</div>
 	
 	<div class="summary">
-	<h3>LSTM Model</h3>
-		<p></p>
-	
+	<h3>Machine Learning Models</h3>
+		<p> To determine the best model to use we compared the results from 4 different types: LSTM,  Stacked LSTM, Bidirectional LSTM, and Stacked Bidirectional LSTM. 
+			A description and visualization into the quality of each machine learning model will be discussed on the visualization page. 
+		</p>
+
+		<h5>Regular LSTM:</h5>  
+			<p>In this model, we implemented only one LSTM layer.  The LSTM uses a cell to maintain memory as well as ``carry for ensuring that the signal … is not lost as the sequence is processed” (Koehrsen).  For our LSTM model, we built the model with Embedding, LSTM, Dropout, and Dense layers.  Then when compiling the model, we used categorical crossentropy for our loss function and adam for our optimizer.
+			</p>
+
+		<h5>Stacked LSTM:</h5>  
+			<p> The difference between this model and the previous model is that we now have multiple LSTM layers stacked on top of each other.  For this model, we utilized three LSTM layers to create the stack.  In between each of the LSTM layers, there was also a dropout layer.  These dropout layers allow us to prevent overfitting in the training data (Koehrsen).  In addition, we had an Embedding and a Dense layer.  To compile the model, we used the same parameters as in the first model.  The purpose of the stacked layers is that it allows for more model complexity.
+			</p>
+		<h5>Bidirectional LSTM:</h5>  
+			<p>For this model, only one Bidirectional LSTM layer was implemented.  In addition to this layer, we utilized an Embedding, Dropout, and Dense layer.  When compiling the model, we again used categorical crossentropy for our loss function and adam for our optimizer.  There are a few differences between an LSTM and a Bidirectional LSTM.  The Bidirectional LSTM layer ``processes sequences from both directions”(Koehrsen).  Bidirectional LSTMs involve "duplicating the first recurrent layer in the network so that there are now two layers side-by-side, then providing the input sequence as-is as input to the first layer and providing a reversed copy of the input sequence to the second” (Brownlee).  This idea came about because there is evidence to show that the context of a full statement can be used to interpret what is being said, rather than just the beginning of the statement (Brownlee).
+			</p>
+		<h5>Stacked Bidirectional LSTM:</h5>
+			<p>This model is basically a combination of the third model with the second model.  We used the idea from the second model and implemented it with the Bidirectional LSTMs from the third model.  Just as done in the Stacked LSTM, for the Stacked Bidirectional LSTM, we utilized three Bidirectional LSTM layers to create the stack.  In these layers, we included dropout as well.  Additional layers in this model include an Embedding, another Dropout layer, and a Dense layer.  For this model, categorical crossentropy was again used for our loss function and adam for our optimizer.  This model allowed for the extra model complexity that comes from the Stacked LSTM logic, as well as the ability to process the sequences from both directions that come from the Bidirectional LSTM.
+			</p>
+			
+		
+		<h6> Sources: </h6>
+			<p>
+			J. Brownlee, “A Gentle Introduction to Long Short-Term Memory Networks by the Experts,” Machine Learning Mastery, 19-Feb-2020. [Online]. Available: https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/.
+			<br/>
+			W. Koehrsen, “Recurrent Neural Networks by Example in Python,” Medium, 05-Nov-2018. [Online]. Available: https://towardsdatascience.com/recurrent-neural-networks-by-example-in-python-ffd204f99470.</p>
+			</p>
 	</div>
 
     
