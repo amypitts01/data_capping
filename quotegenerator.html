@@ -10,7 +10,7 @@
     <!--Script for button click!-->
     <script> 
         function funonclick() { 
-            d3.csv("quotes_button.csv")
+            d3.csv("quotes.csv")
                 .get(function(data) {
 
                         var randomItem = data[Math.floor(Math.random()*data.length)].QUOTE;
