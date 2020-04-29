@@ -88,7 +88,12 @@
     </div>
 
     <div id="vis_summary">
-        <p> The plots above display the loss function of the machine learning algorithms.  </p>
+        <h3>Machine Learning Validation Comparison</h3>
+        <p> After analyzing each of the models’ loss vs. validation loss plots, we decided the best model was the <b>Stacked LSTM model</b>.  
+            We chose this model because all of the other models’ losses and validation losses diverged from each other very quickly.  
+            While the Stacked LSTM did not have very good values for loss, we thought it was the best choice because the training 
+            loss and validation loss were close to each other until 6 epochs.  Due to the divergence of the two after 6 epochs, we 
+            decided to only train the model for 6 epochs. Therefore the quote from the generation quote pages will be generated using the Stacked LSTM model. </p>
     </div>
     <hr>
     <!--    -----------------------------------------------         -->
