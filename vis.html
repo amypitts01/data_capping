@@ -39,14 +39,14 @@
 
 
     <div id="vis_summary">
-        <h3>Count of Quotes Per Genre</h3>
-		<p>This histogram is showing the number of quotes in each of the 117 genres.  The most common genre is <em>age</em> and is closely followed by <em>alone</em>, <em>art</em>, <em>business</em> and <em>amazing</em>. 
-		   There are close to 1,000 quotes labeled with each of these genre.  
-		   The generes with the fewest quotes are <em>Mother's Day</em>, <em>St.Patrick's Day</em>, <em>Father's Day</em>, <em>Memorial Day</em>, and <em>Valentine's Day</em>.
+        <h3>Count of Quotes per Genre</h3>
+		<p>This histogram shows the number of quotes in each of the 117 genres.  The most common genre is <em>age</em> and is closely followed by <em>alone</em>, <em>art</em>, <em>business</em> and <em>amazing</em>. 
+		   There are close to 1,000 quotes labeled with each of these genres.  
+		   The genres with the fewest quotes are <em>Mother's Day</em>, <em>St.Patrick's Day</em>, <em>Father's Day</em>, <em>Memorial Day</em>, and <em>Valentine's Day</em>.
 		   These genres are very close to the x-axis, so their counts are close to zero.  The counts of these quotes are all less than 20 each.</p>
         
-		<h3>Count of Quotes Per Author</h3>
-		<p>This histogram shows the number of quotes per Author.  Because there are 11,173 unique Authors this histogram only shows the top 1,000 Authors.
+		<h3>Count of Quotes per Author</h3>
+		<p>This histogram shows the number of quotes per author.  Since there are 11,173 unique authors this histogram only shows the top 1,000 authors.
 		It is clear from this graph that most of these authors write approximately 60 quotes each or less, but the maximum number of quotes an author wrote is just below 140. </p>
     </div>
     <hr>
@@ -64,14 +64,14 @@
     </div>
 
     <div id="vis_summary">
-		<h3>Number of Words vs. Characters Per Quote</h3>
+		<h3>Number of Words vs. Characters per Quote</h3>
         <p>This scatterplot shows the relationship between the number of words per quote compared to the number of characters per quote.
-			The plot clearly shows that as the number of words increase, the number of character increase and as the number of characters increase, the number of words increases.</p>
+			The plot clearly shows that as the number of words increase, the number of characters increase and as the number of characters increase, the number of words increase.</p>
 		
 		<h3>Number of Quotes with <=280 Characters</h3>
-		<p>This histogram shows if the Number of Characters in the Quote are less than or equal to 280. 
+		<p>This histogram shows whether or not the quote is 280 characters or less.
 			If there are 280 characters or less, then the quote is labeled <em>True</em>, but if there are more than 280 characters, the quote is labeled <em>False</em>.
-			The number of characters is important for when the quotes we create are posted to twitter.  A tweet can have a maximum length of 280 characters.</p>
+			The number of characters in a quote is important when we post them to twitter because a tweet can only have a maximum length of 280 characters.</p>
 			
     </div>
     <hr>
@@ -89,11 +89,11 @@
 
     <div id="vis_summary">
         <h3>Machine Learning Validation Comparison</h3>
-        <p> After analyzing each of the models’ loss vs. validation loss plots, we decided the best model was the <b>Stacked LSTM model</b>.  
+        <p> After analyzing each of the models’ loss vs. validation loss plots, we decided the best model was the <b>Stacked LSTM</b> model.  
             We chose this model because all of the other models’ losses and validation losses diverged from each other very quickly.  
             While the Stacked LSTM did not have very good values for loss, we thought it was the best choice because the training 
             loss and validation loss were close to each other until 6 epochs.  Due to the divergence of the two after 6 epochs, we 
-            decided to only train the model for 6 epochs. Therefore the quote from the generation quote pages will be generated using the Stacked LSTM model. </p>
+            decided to only train the model for 6 epochs. Therefore the quote on the Quote Generator page will be generated using the Stacked LSTM model. </p>
     </div>
     <hr>
     <!--    -----------------------------------------------         -->
@@ -113,9 +113,9 @@
 		<h3>Number of Words in Each Quote: Original Dataset vs. Twitter Data</h3>
         <p>The graphs above show the word counts in quotes.  
 		   The histogram to the left represents the word counts of quotes from the original dataset and the histogram to the right represents the word counts of quotes from the data pulled from various Twitter accounts.  
-		   It is clear looking at these histograms that most of the data is currently being pulled from the original dataset.  The histograms also show that some of the quotes from the dataset are 20 to 40 words longer than the quotes pulled from twitter.  
+		   It is clear looking at these histograms that most of the data is currently being pulled from the original dataset.  The histograms also show that some of the quotes from the dataset are 20 to 40 words longer than the quotes pulled from Twitter.  
 		   The quote with the maximum length from the original dataset is over 80 words, and the quote with the maximum length from the Twitter data, is about 47 words.  
-		   However, the peak of both curves are around the 20 word mark.</p>
+		   However, the peak of both curves is around the 20 word mark.</p>
     </div>
     <hr>
     <!--    -----------------------------------------------         -->
@@ -136,11 +136,11 @@
 
     <div id="vis_summary">
 		<h3>Number of Characters in Each Quote: Original Dataset vs. Twitter Data</h3>
-        <p>The visualizations above represent the number of characters in each quote in the original dataset (histogram on left) and the characters per quote in the Twitter Data (histogram to right).  
-		   The maximum character count in a Tweet is 280, so it makes sense that the histogram of characters of Twitter data is about 250.  The original dataset has character counts that are more than 280.  
+        <p>The visualizations above represent the number of characters in each quote in the original dataset (histogram on left) and the number of characters in each quote in the Twitter Data (histogram to right).  
+		   The maximum character count in a tweet is 280, so it makes sense that the maximum number of characters of the Twitter data is about 250.  The original dataset has character counts that are more than 280.  
 		   The maximum character count is over 400 characters.  
 		   The peak of both histograms are at about 100 characters.  
-		   In the data from Twitter most of the quotes are between the 50- and 150-character range, but in the original dataset, a lot of the data falls above this range into the 200 and 300 character range.</p>
+		   In the data from Twitter most of the quotes are between the 50 and 150 characters range, but in the original dataset, a lot of the data falls above this range, mostly between the 200 and 300 characters count.</p>
     </div>
 
 
