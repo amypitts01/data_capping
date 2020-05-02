@@ -215,7 +215,7 @@ p {
 #vis_des { /*for visualization page top summary*/
 	width: 94%;
 	font-family: Helvetica;
-	height: 25px;
+	height: 100%;
 	margin: 0px;
 	margin-left: auto;
 	margin-right: auto;
